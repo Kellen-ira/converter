@@ -20,18 +20,18 @@ export default function Convert() {
   return (
     <View style={{backgroundColor:'#353e4d',height:800}}>
 <View style={{justifyContent:'center',paddingTop:200,paddingLeft:100,color:'white'}}>
-    <Text style={{paddingLeft:60,fontSize:17}}>Dollars</Text>
+    <Text style={{paddingLeft:60,fontSize:17,color:'white'}}>Dollars</Text>
     <TextInput
     
     placeholder='EnterNumber'
     keyboardType="numeric"
-    style={{borderWidth:1,backgroundColor:'white',width:200,textAlign:'center',padding:10}}
+    style={{borderWidth:1,backgroundColor:'white',width:200,textAlign:'center',padding:10,marginBottom:20}}
     onChangeText={text => setAmount(text)}
     
     />
-    <Text style={{paddingLeft:60,fontSize:17}}>Rwf</Text>
+    
    
-    <TouchableOpacity style={{borderWidth:1,color:'white',width:200,textAlign:'center',padding:10}}  onPress={convertCurrency}>
+    <TouchableOpacity style={{borderWidth:1,color:'white',width:200,textAlign:'center',padding:10,backgroundColor:'black'}}  onPress={convertCurrency}>
         <Text style={{paddingLeft:60,color:'skyblue',fontSize:20}}>Convert</Text>
     </TouchableOpacity>
 </View>
@@ -41,5 +41,5 @@ export default function Convert() {
     
   );
 }
-<view></view>
+
 
